@@ -6,6 +6,10 @@ node_modules/
 dist/
 portable/
 *.zip
+release/
+
+# Desktop build artifacts (keep .cs source)
+desktop/*.exe
 
 # Android build artifacts
 android/.gradle/
@@ -13,6 +17,7 @@ android/app/build/
 android/build/
 android/capacitor-cordova-android-plugins/build/
 android/.idea/
+*.apk
 
 # OS files
 .DS_Store

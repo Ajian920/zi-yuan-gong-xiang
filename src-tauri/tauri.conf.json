@@ -1,0 +1,44 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/tauri-apps/tauri/dev/crates/tauri-config-schema/schema.json",
+  "productName": "资源共享",
+  "version": "1.0.0",
+  "identifier": "com.ajian.ziyuanGongXiang",
+  "build": {
+    "frontendDist": "../www",
+    "devUrl": "http://localhost:3000"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "资源共享",
+        "width": 1200,
+        "height": 800,
+        "minWidth": 380,
+        "minHeight": 600,
+        "center": true,
+        "decorations": true,
+        "resizable": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "../build/icon_32.png",
+      "../build/icon_128.png",
+      "../build/icon_256.png",
+      "../build/icon_512.png",
+      "../build/icon.ico"
+    ],
+    "resources": [],
+    "windows": {
+      "webviewInstallMode": {
+        "type": "embedBootstrapper"
+      }
+    }
+  }
+}
