@@ -1,0 +1,26 @@
+﻿{
+  "name": "ziyuan-gongxiang",
+  "productName": "资源共享",
+  "version": "1.0.0",
+  "description": "资源共享 - 资源合集分享工具",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build-win": "electron-packager . \"资源共享\" --platform=win32 --arch=x64 --out=dist --overwrite --icon=build/icon.ico --asar",
+    "build-android": "npx cap sync android && cd android && gradlew.bat assembleDebug",
+    "cap-sync": "npx cap sync android",
+    "cap-open": "npx cap open android"
+  },
+  "appId": "com.ajian.ziyuanGongXiang",
+  "author": "阿建整理",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^36.0.0",
+    "electron-packager": "^17.1.2"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.2",
+    "@capacitor/cli": "^7.4.2",
+    "@capacitor/core": "^7.4.2"
+  }
+}
